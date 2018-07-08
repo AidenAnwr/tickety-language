@@ -1,0 +1,173 @@
+{
+  "en": {
+    "generic": {
+      "success": "Success!",
+      "updated": "The :field: has been updated!"
+    },
+    "strings": {
+      "language": "language",
+      "prefix": "prefix",
+      "subject": "Subject",
+      "information": "Information"
+    },
+    "errors": {
+      "no-permission": "You don't have permission for that command! If you believe this is a mistake make sure you have the role called `:role:` assigned to yourself.",
+      "missing-permissions": "Tickety is missing the `:permission:` permission to perform this command!",
+      "no-premium": "This command is only available in the premium version of Tickety. You can buy the premium version on https://panel.tickety.xyz/",
+      "unknown-error": "An unknown error has occured while performing this command. Please report this error to the Tickety team! https://discord.gg/AHJYyyb",
+      "kick-hierarchy": "I can't kick that user because he is higher than me!",
+      "ban-hierarchy": "I can't ban that user because he is higher than me!",
+      "cooldown": "You can only run a command every 3 seconds!",
+      "long-cooldown": "You can only run this command every 30 seconds in a server!",
+      "invalid-arguments": "Invalid arguments! Send :prefix:help to see what arguments are needed.",
+      "no-admin-role": "Please create a role called exactly 'Support Team' in order for Tickety to work!",
+      "invalid-tag": "Please tag a valid user!",
+      "not-in-ticket": "You can only run this command in a ticket channel!"
+    },
+    "help-categories": {
+      "general": "General Commands",
+      "tickets": "Ticket Commands",
+      "admin-tickets": "Admin Ticket Commands",
+      "moderation": "Moderation Commands",
+      "configuration": "Configuration Commands"
+    },
+    "cmds": {
+      "help": {
+        "description": "Shows all of my commands",
+        "header-title": "My Commands",
+        "only-user-cmds": "In this help message only user commands are being shown, for a full list of the commands you should have the `:role:` role assigned to yourself.",
+        "all-cmds-shown": "These are all of my commands"
+      },
+      "setprefix": {
+        "description": "Set the command prefix",
+        "invalid-prefix": "Your given prefix is invalid! Please pick a prefix that is no longer than 3 characters."
+      },
+      "setlang": {
+        "description": "Set the language",
+        "invalid-language": "Please pick one of these supported languages: :languages:"
+      },
+      "setopen": {
+        "description": "Change whether or not people can open tickets",
+        "changed-open": "Your users can now open tickets again.",
+        "changed-closed": "Your users won't be able to create tickets now."
+      },
+      "new": {
+        "description": "Open a new ticket",
+        "guild-closed": "This server has temporarily disabled the creation of tickets",
+        "opened": "Your ticket has been opened :channel:",
+        "opened-with": "Your ticket with :with: has been opened :channel:",
+        "no-subject": "No subject has been given",
+        "default-message": "Dear :with:,\n\nThank you for contacting our support team!\n\nWe will come right back to you! In the mean time please describe your questions thoroughly."
+      },
+      "info": {
+        "description": "View info on a ticket",
+        "created-by": "Created by",
+        "created-at": "Created at"
+      },
+      "status": {
+        "description": "Get information about the status of Tickety",
+        "statistics": "Statistics",
+        "status": "Status",
+        "servers": "I am in **:servers:** servers",
+        "tickets": "There are **:tickets:** open",
+        "tickets-total": "**:tickets-total:** tickets have been opened since v5",
+        "users": "I am helping **:users:** users"
+      },
+      "close": {
+        "description": "Close a ticket",
+        "are-you-sure": "Are you sure you want to close this ticket? The messages will be gone.\nSend `:prefix:close` again to close the ticket.\nYour request will be voided in 20 seconds."
+      },
+      "closeall": {
+        "description": "Close all open tickets",
+        "success": ":amount: tickets have been closed",
+        "are-you-sure": "Are you sure you want to close all tickets? This can have devastating consequences!\nSend `:prefix:closeall` again to **close all tickets**.\nYour request will be voided in 20 seconds."
+      }
+    }
+  },
+
+  "nl": {
+    "generic": {
+      "success": "Succes!",
+      "updated": "De :field: is geupdate!"
+    },
+    "strings": {
+      "language": "taal",
+      "prefix": "prefix",
+      "subject": "Onderwerp",
+      "information": "Informatie"
+    },
+    "errors": {
+      "no-permission": "Je hebt geen toestemming voor deze actie! Als je denkt dat dit een fout is, zorg dan dat je de `:role:` rol hebt.",
+      "missing-permissions": "Tickety mist de machtiging `:permission:` om deze actie te voltooien!",
+      "no-premium": "Deze functie is alleen beschikbaar in de premium versie van Tickety. Je kan premium kopen op https://panel.tickety.xyz/",
+      "unknown-error": "Een onbekende fout is voorgekomen tijdens het uitvoeren van deze opdracht. Rapporteer deze error aan het Tickety Team! https://discord.gg/AHJYyyb",
+      "kick-hierarchy": "Ik kan die gebruiker niet kicken, want zijn rol is hoger dan mijn rol!",
+      "ban-hierarchy": "Ik kan die gebruiker niet bannen, want zijn rol hoger dan mijn rol!",
+      "cooldown": "Je kan maximaal een command per 3 seconden uitvoeren!",
+      "long-cooldown": "Dit kan je maar een keer per 30 seconde in een server uitvoeren!",
+      "invalid-arguments": "Onvoldoende Argumenten! Stuur :prefix:help om te zien welke argumenten benodigd zijn.",
+      "no-admin-role": "Maak een rol genaamd precies 'Support Team' zodat Tickety kan werken!",
+      "invalid-tag": "Tag een bestaande gebruiker",
+      "not-in-ticket": "Dat kan je alleen in een ticket doen!"
+    },
+    "help-categories": {
+      "general": "Algemene Commands",
+      "tickets": "Ticket Commands",
+      "admin-tickets": "Admin Ticket Commands",
+      "moderation": "Moderatie Commands",
+      "configuration": "Configuratie Commands"
+    },
+    "cmds": {
+      "help": {
+        "description": "Laat al mijn commands zien",
+        "header-title": "Mijn Commands",
+        "only-user-cmds": "In dit bericht worden alleen admin commands weergegeven, voor alle commands moet je de `:role` rol hebben.",
+        "all-cmds-shown": "Dit zijn al mijn commands"
+      },
+      "setprefix": {
+        "description": "Verander de command prefix",
+        "invalid-prefix": "Je ingevoerde prefix is invalide! Geef een prefix van 1 tot 3 karakters."
+      },
+      "setlang": {
+        "description": "Verander de taal",
+        "invalid-language": "Kies een van deze ondersteunde talen: :languages:"
+      },
+      "setopen": {
+        "description": "Bepaal of tickets gemaakt kunnen worden",
+        "changed-open": "Tickets kunnen nu weer gemaakt worden",
+        "changed-closed": "Tickets kunnen nu niet meer gemaakt worden"
+      },
+      "new": {
+        "description": "Open een ticket",
+        "guild-closed": "Deze server heeft het maken van tickets tijdelijk uitgeschakeld",
+        "opened": "Je ticket is aangemaaakt :channel:",
+        "opened-with": "Je ticket samen met :with: is gemaakt :channel:",
+        "no-subject": "Er is geen onderwerp opgegeven",
+        "default-message": "Geachte :with:,\n\nWe zullen zo tot u komen. Ondertussen kunt u alvast uw vragen stellen, zodat we u meteen kunnen helpen."
+      },
+      "info": {
+        "description": "Bekijk informatie van een ticket",
+        "created-by": "Gemaakt door",
+        "created-at": "Gemaakt op"
+      },
+      "status": {
+        "description": "Krijg informatie over Tickety",
+        "statistics": "Statistieken",
+        "status": "Status",
+        "servers": "Tickety is in **:servers:** servers",
+        "tickets": "Er zijn **:tickets:** open",
+        "tickets-total": "Er zijn **:tickets-total:** tickets geopend sinds v5",
+        "users": "Tickety helpt **:users:** users"
+      },
+      "close": {
+        "description": "Sluit een ticket",
+        "are-you-sure": "Weet je zeker dat je deze ticket wil sluiten? Alle berichten zullen verloren gaan.\nStuur `:prefix:close` opnieuw om te sluiten."
+      },
+      "closeall": {
+        "description": "Sluit alle open tickets",
+        "success": "Er zijn :amount: tickets gesloten!",
+        "are-you-sure": "Weet je zeker dat je all tickets wil sluiten? Dit kan grote consequenties hebben!\nStuur `:prefix:closeall` nog een keer om **alle tickets te sluiten**."
+      }
+    }
+  }
+}
