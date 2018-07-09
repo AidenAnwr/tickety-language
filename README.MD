@@ -6,6 +6,8 @@ Feel free to open a PR and add your own language. Everyone that adds a language/
 
 ### So, how would I add a language?
 
+First off, PRs should be made to the `develop` branch, we don't merge PRs directly into the `master` branch.
+
 Here is an example of what the file looks like: 
 ```json
 { 

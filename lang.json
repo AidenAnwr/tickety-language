@@ -8,7 +8,8 @@
       "language": "language",
       "prefix": "prefix",
       "subject": "Subject",
-      "information": "Information"
+      "information": "Information",
+      "disabled": "disabled"
     },
     "errors": {
       "no-permission": "You don't have permission for that command! If you believe this is a mistake make sure you have the role called `:role:` assigned to yourself.",
@@ -22,6 +23,7 @@
       "invalid-arguments": "Invalid arguments! Send :prefix:help to see what arguments are needed.",
       "no-admin-role": "Please create a role called exactly 'Support Team' in order for Tickety to work!",
       "invalid-tag": "Please tag a valid user!",
+      "invalid-tag-channel": "Please enter a valid category name or id!",
       "not-in-ticket": "You can only run this command in a ticket channel!"
     },
     "help-categories": {
@@ -81,6 +83,14 @@
         "description": "Close all open tickets",
         "success": ":amount: tickets have been closed",
         "are-you-sure": "Are you sure you want to close all tickets? This can have devastating consequences!\nSend `:prefix:closeall` again to **close all tickets**.\nYour request will be voided in 20 seconds."
+      },
+      "setcategory": {
+        "description": "Change where tickets are created",
+        "success": "Your ticket category is now `:category:`"
+      },
+      "rename": {
+        "description": "Rename a ticket",
+        "success": "This ticket has been renamed to :name:"
       }
     }
   },
@@ -94,7 +104,8 @@
       "language": "taal",
       "prefix": "prefix",
       "subject": "Onderwerp",
-      "information": "Informatie"
+      "information": "Informatie",
+      "disabled": "uitgeschakeld"
     },
     "errors": {
       "no-permission": "Je hebt geen toestemming voor deze actie! Als je denkt dat dit een fout is, zorg dan dat je de `:role:` rol hebt.",
@@ -108,6 +119,7 @@
       "invalid-arguments": "Onvoldoende Argumenten! Stuur :prefix:help om te zien welke argumenten benodigd zijn.",
       "no-admin-role": "Maak een rol genaamd precies 'Support Team' zodat Tickety kan werken!",
       "invalid-tag": "Tag een bestaande gebruiker",
+      "invalid-tag-channel": "Geef de naam of id van een bestaande categorie",
       "not-in-ticket": "Dat kan je alleen in een ticket doen!"
     },
     "help-categories": {
@@ -167,6 +179,14 @@
         "description": "Sluit alle open tickets",
         "success": "Er zijn :amount: tickets gesloten!",
         "are-you-sure": "Weet je zeker dat je all tickets wil sluiten? Dit kan grote consequenties hebben!\nStuur `:prefix:closeall` nog een keer om **alle tickets te sluiten**."
+      },
+      "setcategory": {
+        "description": "Verander in welke categorie de tickets ontstaan",
+        "success": "Je ticket category is nu `:category:`"
+      },
+      "rename": {
+        "description": "Hernoem een ticket",
+        "success": "Deze ticket heet nu :name:"
       }
     }
   }
