@@ -71,7 +71,7 @@
         "statistics": "Statistics",
         "status": "Status",
         "servers": "I am in **:servers:** servers",
-        "tickets": "There are **:tickets:** open",
+        "tickets": "There are **:tickets:** tickets open",
         "tickets-total": "**:tickets-total:** tickets have been opened since v5",
         "users": "I am helping **:users:** users"
       },
@@ -167,7 +167,7 @@
         "statistics": "Statistieken",
         "status": "Status",
         "servers": "Tickety is in **:servers:** servers",
-        "tickets": "Er zijn **:tickets:** open",
+        "tickets": "Er zijn **:tickets:** tickets open",
         "tickets-total": "Er zijn **:tickets-total:** tickets geopend sinds v5",
         "users": "Tickety helpt **:users:** users"
       },
