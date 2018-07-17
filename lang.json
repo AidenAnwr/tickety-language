@@ -11,6 +11,9 @@
       "information": "Information",
       "disabled": "disabled"
     },
+    "log": {
+      "opened": ":open-user: has opened a new ticket :channel:"
+    },
     "errors": {
       "no-permission": "You don't have permission for that command! If you believe this is a mistake make sure you have the role called `:role:` assigned to yourself.",
       "missing-permissions": "Tickety is missing the `:permission:` permission to perform this command!",
@@ -106,6 +109,9 @@
       "subject": "Onderwerp",
       "information": "Informatie",
       "disabled": "uitgeschakeld"
+    },
+    "log": {
+      "opened": ":open-user: heeft een ticket geopend :channel:"
     },
     "errors": {
       "no-permission": "Je hebt geen toestemming voor deze actie! Als je denkt dat dit een fout is, zorg dan dat je de `:role:` rol hebt.",
