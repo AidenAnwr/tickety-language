@@ -9,10 +9,15 @@
       "prefix": "prefix",
       "subject": "Subject",
       "information": "Information",
-      "disabled": "disabled"
+      "disabled": "disabled",
+      "reason": "Reason",
+      "statistics": "Statistics",
+      "premium": "Premium"
     },
     "log": {
-      "opened": ":open-user: has opened a new ticket :channel:"
+      "opened": ":open-user: has opened a new ticket :channel:",
+      "closed": ":close-user: has closed ticket with ID :id:",
+      "added-to-ticket": ":added-user: has been added to :ticket: by :adding-user:"
     },
     "errors": {
       "no-permission": "You don't have permission for that command! If you believe this is a mistake make sure you have the role called `:role:` assigned to yourself.",
@@ -22,11 +27,12 @@
       "kick-hierarchy": "I can't kick that user because he is higher than me!",
       "ban-hierarchy": "I can't ban that user because he is higher than me!",
       "cooldown": "You can only run a command every 3 seconds!",
-      "long-cooldown": "You can only run this command every 30 seconds in a server!",
+      "long-cooldown": "You can only run this command once per minute!",
       "invalid-arguments": "Invalid arguments! Send :prefix:help to see what arguments are needed.",
       "no-admin-role": "Please create a role called exactly 'Support Team' in order for Tickety to work!",
       "invalid-tag": "Please tag a valid user!",
-      "invalid-tag-channel": "Please enter a valid category name or id!",
+      "invalid-tag-cateogry": "Please enter a valid category name or id!",
+      "invalid-tag-channel": "Please tag a valid channel!",
       "not-in-ticket": "You can only run this command in a ticket channel!"
     },
     "help-categories": {
@@ -37,6 +43,16 @@
       "configuration": "Configuration Commands"
     },
     "cmds": {
+      "about": {
+        "description": "Get to know me",
+        "who-am-i": "Who am I?",
+        "who-am-i-text": "I am Tickety, and I will try my best to help everyone! If I am in a discord server, people can use me to create tickets in order to get help. See all my commands by sending `-help`",
+        "my-website": "My Website",
+        "my-website-text": "You can reach me at http://tickety.xyz/",
+        "premium-text": "To support my development I offer some features that are only available to premium users. Tickety Premium is available on http://tickety.xyz/ at a low cost.\n\n",
+        "premium-server": "🎟 This server uses the premium version",
+        "non-premium-server": "🎫 This server uses the free version"
+      },
       "help": {
         "description": "Shows all of my commands",
         "header-title": "My Commands",
@@ -71,7 +87,6 @@
       },
       "status": {
         "description": "Get information about the status of Tickety",
-        "statistics": "Statistics",
         "status": "Status",
         "servers": "I am in **:servers:** servers",
         "tickets": "There are **:tickets:** tickets open",
@@ -80,7 +95,8 @@
       },
       "close": {
         "description": "Close a ticket",
-        "are-you-sure": "Are you sure you want to close this ticket? The messages will be gone.\nSend `:prefix:close` again to close the ticket.\nYour request will be voided in 20 seconds."
+        "are-you-sure": "Are you sure you want to close this ticket? The messages will be gone.\nSend `:prefix:close` again to close the ticket.\nYour request will be voided in 20 seconds.",
+        "no-reason": "No reason given"
       },
       "closeall": {
         "description": "Close all open tickets",
@@ -94,6 +110,32 @@
       "rename": {
         "description": "Rename a ticket",
         "success": "This ticket has been renamed to :name:"
+      },
+      "setlog": {
+        "description": "Set the ticket log channel",
+        "success": "The ticket log has been set"
+      },
+      "settranscriptlog": {
+        "description": "Set the transcript log channel",
+        "success": "The transcript log has been set"
+      },
+      "transcript": {
+        "description": "Get a transcript of the conversation"
+      },
+      "setmsg": {
+        "description": "Set the welcome message for a ticket",
+        "updated": "The message has been set!"
+      },
+      "add": {
+        "description": "Add a user to a ticket",
+        "not-in-ticket": "When performing this command outside of a ticket you have to tag a channel",
+        "already-can-read": "That user can already read this ticket channel",
+        "added": ":addeduser: has been added to the ticket",
+        "addedtothis": ":addeduser: has been added to this ticket",
+      },
+      "setrole": {
+        "description": "Set the admin role",
+        "updated": "The new admin role has been set"
       }
     }
   },
@@ -108,10 +150,13 @@
       "prefix": "prefix",
       "subject": "Onderwerp",
       "information": "Informatie",
-      "disabled": "uitgeschakeld"
+      "disabled": "uitgeschakeld",
+      "reason": "Reden",
+      "statistics": "Statistieken"
     },
     "log": {
-      "opened": ":open-user: heeft een ticket geopend :channel:"
+      "opened": ":open-user: heeft een ticket geopend :channel:",
+      "closed": ":close-user: heeft ticket met ID :id: gesloten"
     },
     "errors": {
       "no-permission": "Je hebt geen toestemming voor deze actie! Als je denkt dat dit een fout is, zorg dan dat je de `:role:` rol hebt.",
@@ -121,11 +166,12 @@
       "kick-hierarchy": "Ik kan die gebruiker niet kicken, want zijn rol is hoger dan mijn rol!",
       "ban-hierarchy": "Ik kan die gebruiker niet bannen, want zijn rol hoger dan mijn rol!",
       "cooldown": "Je kan maximaal een command per 3 seconden uitvoeren!",
-      "long-cooldown": "Dit kan je maar een keer per 30 seconde in een server uitvoeren!",
+      "long-cooldown": "Je kan dit maximaal één keer per minuut uitvoeren!",
       "invalid-arguments": "Onvoldoende Argumenten! Stuur :prefix:help om te zien welke argumenten benodigd zijn.",
       "no-admin-role": "Maak een rol genaamd precies 'Support Team' zodat Tickety kan werken!",
       "invalid-tag": "Tag een bestaande gebruiker",
-      "invalid-tag-channel": "Geef de naam of id van een bestaande categorie",
+      "invalid-tag-category": "Geef de naam of id van een bestaande categorie",
+      "invalid-tag-channel": "Tag een bestaande channel!",
       "not-in-ticket": "Dat kan je alleen in een ticket doen!"
     },
     "help-categories": {
@@ -170,7 +216,6 @@
       },
       "status": {
         "description": "Krijg informatie over Tickety",
-        "statistics": "Statistieken",
         "status": "Status",
         "servers": "Tickety is in **:servers:** servers",
         "tickets": "Er zijn **:tickets:** tickets open",
@@ -179,7 +224,8 @@
       },
       "close": {
         "description": "Sluit een ticket",
-        "are-you-sure": "Weet je zeker dat je deze ticket wil sluiten? Alle berichten zullen verloren gaan.\nStuur `:prefix:close` opnieuw om te sluiten."
+        "are-you-sure": "Weet je zeker dat je deze ticket wil sluiten? Alle berichten zullen verloren gaan.\nStuur `:prefix:close` opnieuw om te sluiten.",
+        "no-reason": "Geen reden gegeven"
       },
       "closeall": {
         "description": "Sluit alle open tickets",
@@ -193,6 +239,10 @@
       "rename": {
         "description": "Hernoem een ticket",
         "success": "Deze ticket heet nu :name:"
+      },
+      "setlog": {
+        "description": "Stel de log channel in",
+        "success": "De ticket log is ingesteld"
       }
     }
   }
