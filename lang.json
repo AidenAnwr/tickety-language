@@ -45,7 +45,7 @@
     },
     "cmds": {
       "about": {
-        "description": "Get to know me",
+        "description": "Get to know who I am",
         "who-am-i": "Who am I?",
         "who-am-i-text": "I am Tickety, and I will try my best to help everyone! If I am in a discord server, people can use me to create tickets in order to get help. See all my commands by sending `-help`",
         "my-website": "My Website",
@@ -154,6 +154,27 @@
         "all-blacklists": "These are all of the blacklists currently for this server",
         "blacklists": "Blacklists",
         "no-blacklists": "There are no users blacklisted"
+      },
+      "setname": {
+        "description": "Set the name tickets will be created with",
+        "updated": "The ticket name has been set to `:name:`",
+        "too-long": "The name may not be longer than 24 characters"
+      },
+      "credits": {
+        "description": "View all of your premium credits",
+        "all-credits": "These are all of your premium credits",
+        "premium-credits": "Premium Credits"
+      },
+      "redeem": {
+        "description": "Activate premium in this server",
+        "activated": "You have activated premium in this server! ❤",
+        "no-credits": "You currently have no available unused credits",
+        "already-premium": "This server is already premium!"
+      },
+      "removepremium": {
+        "description": "Remove premium in this server, to use it in another server",
+        "removed": "You have removed your premium credit from this server, you can now use it somewhere else",
+        "not-your-credit": "This premium does not belong to you, you cannot remove it from this server."
       }
     }
   },
