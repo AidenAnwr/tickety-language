@@ -26,14 +26,15 @@
       "unknown-error": "An unknown error has occured while performing this command. Please report this error to the Tickety team! https://discord.gg/AHJYyyb",
       "kick-hierarchy": "I can't kick that user because he is higher than me!",
       "ban-hierarchy": "I can't ban that user because he is higher than me!",
-      "cooldown": "You can only run a command every 3 seconds!",
-      "long-cooldown": "You can only run this command once per minute!",
+      "cooldown": "Please slow down a little!",
+      "long-cooldown": "You can only run this command twice per minute!",
       "invalid-arguments": "Invalid arguments! Send :prefix:help to see what arguments are needed.",
       "no-admin-role": "Please create a role called exactly 'Support Team' in order for Tickety to work!",
       "invalid-tag": "Please tag a valid user!",
       "invalid-tag-cateogry": "Please enter a valid category name or id!",
       "invalid-tag-channel": "Please tag a valid channel!",
-      "not-in-ticket": "You can only run this command in a ticket channel!"
+      "not-in-ticket": "You can only run this command in a ticket channel!",
+      "blacklisted": "You have been blacklisted from Tickety commands in this server"
     },
     "help-categories": {
       "general": "General Commands",
@@ -65,7 +66,7 @@
       },
       "setlang": {
         "description": "Set the language",
-        "invalid-language": "Please pick one of these supported languages: :languages:"
+        "invalid-language": "Please pick one of these supported languages: :languages:\nDon't see your language? Add it! https://discord.gg/AHJYyyb"
       },
       "setopen": {
         "description": "Change whether or not people can open tickets",
@@ -136,6 +137,23 @@
       "setrole": {
         "description": "Set the admin role",
         "updated": "The new admin role has been set"
+      },
+      "blacklist": {
+        "description": "Blacklist a user from Tickety commands",
+        "blacklisted": ":user: has been blacklisted successfully!",
+        "already-blacklisted": ":user: is already blacklisted",
+        "cant-admin": "You can't blacklist :user: as he has the admin role! If you really want to blacklist the user, remove his admin role."
+      },
+      "unblacklist": {
+        "description": "Remove a user from the blacklist",
+        "unblacklisted": ":user: has been removed from the blacklist successfully!",
+        "not-blacklisted": ":user: was not blacklisted!"
+      },
+      "blacklists": {
+        "description": "View all of the current blacklists",
+        "all-blacklists": "These are all of the blacklists currently for this server",
+        "blacklists": "Blacklists",
+        "no-blacklists": "There are no users blacklisted"
       }
     }
   },
@@ -165,8 +183,8 @@
       "unknown-error": "Een onbekende fout is voorgekomen tijdens het uitvoeren van deze opdracht. Rapporteer deze error aan het Tickety Team! https://discord.gg/AHJYyyb",
       "kick-hierarchy": "Ik kan die gebruiker niet kicken, want zijn rol is hoger dan mijn rol!",
       "ban-hierarchy": "Ik kan die gebruiker niet bannen, want zijn rol hoger dan mijn rol!",
-      "cooldown": "Je kan maximaal een command per 3 seconden uitvoeren!",
-      "long-cooldown": "Je kan dit maximaal één keer per minuut uitvoeren!",
+      "cooldown": "Niet zo snel!",
+      "long-cooldown": "Je kan dit maximaal twee keer per minuut uitvoeren!",
       "invalid-arguments": "Onvoldoende Argumenten! Stuur :prefix:help om te zien welke argumenten benodigd zijn.",
       "no-admin-role": "Maak een rol genaamd precies 'Support Team' zodat Tickety kan werken!",
       "invalid-tag": "Tag een bestaande gebruiker",
